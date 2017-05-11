@@ -25,10 +25,152 @@ h1 {
 	color: #48D1CC;
 }
 
+.palogrande {
+	position: absolute;
+  top: 15%;
+  left: 1%;
+  width: 1.7em;
+  height: 15%;
+  border-radius: 15%;
+  border-bottom: 10px solid #48D1CC;
+  background-color: #48D1CC;
+  animation: palogrande linear 5s infinite;
+	animation-delay: 1s;
+
+}
+
+@keyframes palogrande {
+  0% {
+    top: 15%; 
+    opacity: 1
+  }
+  25% {
+    top: 5%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 0%;
+    opacity: 0.5;
+
+  }
+  75% {
+    top: 5%;
+    opacity: 0.8;
+
+  }
+  100% {
+    top: 15%;
+    opacity: 1;
+  }
+}
+
+.palobajo {
+	position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 1.7em;
+  height: 15%;
+  transform: rotate(0deg);
+	border-radius: 15%;
+  border-bottom: 10px solid #48D1CC;
+  background-color: #48D1CC;
+  animation: palobajo linear 5s infinite;
+	animation-delay: 1s;
+
+}
+
+@keyframes palobajo {
+  0% {
+    top: 15%;
+    left: 5%;
+    transform: rotate(-45deg);
+    opacity: 1;
+  }
+  25% {
+    top: 5%;
+    left: 5%;
+    transform: rotate(90deg);
+    opacity: 0.8;
+  }
+  50% {
+    top: 0%;
+    left: 5%;
+    transform: rotate(180deg);
+    opacity: 0.5;
+  }
+  75% {
+    top: 5%;
+    left: 5%;
+    transform: rotate(90deg);
+    opacity: 0.8;
+  }
+  100% {
+    top: 15%;
+    left: 5%;
+    transform: rotate(-45deg);
+    opacity: 1;
+  }
+}
+
+.palomedio {
+	position: absolute;
+  margin-top:0%;
+  margin-left: 1%;
+  height: 10%;
+  width: 4%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  margin-right: 5%;
+  border: 1.7em solid #48D1CC;
+  animation: palomedio linear 5s infinite;
+  animation-delay: 1s;
+
+}
+
+@keyframes palomedio {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+    margin-top: 0%;
+  }
+  25% {
+   	transform: rotate(50deg);
+    opacity: 0.8;
+    margin-top: 5%;
+  }
+  50% {
+    transform: rotate(90deg);
+    opacity: 0.5;
+    margin-top: 8%;
+  }
+  75% {
+    transform: rotate(50deg);
+    opacity: 0.8;
+    margin-top: 5%;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+    margin-top: 0%;
+  }
+}
+
 .name {
 	position: absolute;
 	top: 70%;
 	left: 40%;
+}
+
+.name .underline {
+	position: absolute;
+	background-color: #fff;
+  width: 100%;
+  height: 50%;
+  top: 80%;
+  left: 0;
+  border-radius: 0 0 1000% 200px;
+  transition: all 0.5s;
+  transform-origin: left;
 }
 
 .ricardo {
